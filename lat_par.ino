@@ -139,7 +139,7 @@ void loop()                     // run over and over again
         if(((int)GPS.angle-angulAnt)>25){
           //Reseteao el reportTimer
           reportTimer=millis();
-        //enviar UDP
+        //enviar UDP  //enviar a IP=191.236.89.114 PORT=3030
         //response="3030,20"+(String)GPS.year+"-0"+GPS.month+"-"+GPS.day+" "+GPS.hour+":"+GPS.minute+":"+GPS.seconds+","+GPS.latitude+","+GPS.lat+","+GPS.longitude+","+GPS.lon+","+GPS.speed+","+GPS.angle+","+GPS.altitude+","+GPS.satellites;
 //Por el problema de comunicación solo imprimo en consola
           Serial.println(response);
@@ -149,6 +149,7 @@ void loop()                     // run over and over again
           //Reseteao el reportTimer
           reportTimer=millis();
         //enviar UDP
+        //enviar UDP  //enviar a IP=191.236.89.114 PORT=3030
         //response="3030,20"+(String)GPS.year+"-0"+GPS.month+"-"+GPS.day+" "+GPS.hour+":"+GPS.minute+":"+GPS.seconds+","+GPS.latitude+","+GPS.lat+","+GPS.longitude+","+GPS.lon+","+GPS.speed+","+GPS.angle+","+GPS.altitude+","+GPS.satellites;  
         //Por el problema de comunicación solo imprimo en consola
           Serial.println(response);
